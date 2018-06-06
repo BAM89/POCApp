@@ -8,6 +8,7 @@ public class Human {
     private String rarm;
     private String lleg;
     private String rleg;
+    private String nose;
 
     //Class Methods
     public void Walk() {
