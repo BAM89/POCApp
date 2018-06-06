@@ -9,7 +9,8 @@ public class Human {
     private String lleg;
     private String rleg;
     private String nose;
-
+    private String hand;
+    
     //Class Methods
     public void Walk() {
 
