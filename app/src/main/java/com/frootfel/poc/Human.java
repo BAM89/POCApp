@@ -33,7 +33,9 @@ public class Human {
 
     public void Walk(int steps) {}
 
-    public void Talk(String words) { }
+    public void Talk(String words) {
+
+    }
 
     public void Talk() {}
 

@@ -23,12 +23,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-<<<<<<< HEAD
-       
-=======
-        tv = (TextView)findViewById(R.id.textviewName);
-        tv.setText(man.name + "  " + female.name );
 
->>>>>>> d74dba586952a00889d29690884c90845d21ea11
+        tv = (TextView)findViewById(R.id.textviewName);
+        tv.setText(man.name + "  " + female.name);
+
     }
 }
