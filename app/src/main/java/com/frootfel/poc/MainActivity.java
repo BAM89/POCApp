@@ -4,11 +4,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
+
 public class MainActivity extends AppCompatActivity {
     private Human man;
     private TextView tv;
     private Woman female;
-
+    public TextView femtext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
         tv = (TextView)findViewById(R.id.textviewName);
         tv.setText(man.name + "  " + female.name);
+
+        femtext = (TextView)findViewById(R.id.textviewName);
+        femtext.setText(female.)
 
     }
 }
