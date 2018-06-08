@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         tv = (TextView)findViewById(R.id.textviewName);
         tv.setText(man.name + "  " + female.name);
 
-        femtext = (TextView)findViewById(R.id.textviewName);
-        femtext.setText(female.)
+        femtext = (TextView)findViewById(R.id.textviewFName);
+        femtext.setText(female.sayHello("How are you"));
 
     }
 }
