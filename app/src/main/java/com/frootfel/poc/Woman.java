@@ -1,6 +1,8 @@
 package com.frootfel.poc;
 
-public class Woman extends Human {
+import android.util.Log;
+
+public class Woman extends AbstractHuman {
     public String hairColor;
     public int age;
 
@@ -30,4 +32,24 @@ public class Woman extends Human {
 
     }
 
+    @Override
+    void Walk() {
+        Log.d("Woman", "Walk: start");
+    }
+
+    @Override
+    void Talk() {
+        Log.d("Woman", "Talk: start");
+    }
+
+    @Override
+    void Think() {
+        Log.d("Woman", "Think: start ");
+    }
+
+    @Override
+    void Run(){
+        super.Run();
+        Log.d("Woman", "Run: start ");
+    }
 }

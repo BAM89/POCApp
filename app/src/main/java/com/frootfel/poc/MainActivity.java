@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         man.name = "Joe";
         female = new Woman();
         female.name ="Harmony";
+        female.Walk();
+        female.Run();
     }
 
     @Override
