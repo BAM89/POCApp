@@ -2,7 +2,7 @@ package com.frootfel.poc;
 
 import android.util.Log;
 
-public class Woman extends AbstractHuman {
+public class Woman implements IHuman {
     public String hairColor;
     public int age;
 
@@ -11,11 +11,12 @@ public class Woman extends AbstractHuman {
     this.age = 25;  //since age is local to this class you need to use the keyword 'this.' also
     }
 
-    public Woman(String name, int age){
+    /* public Woman(String name, int age){
     this.name = name;
     this.age = age;
 
-    }
+
+    } */
 
     //This function need to return a value
     //Also greet the the parameter that's being passed into the function so you can't modify it,
@@ -32,7 +33,7 @@ public class Woman extends AbstractHuman {
 
     }
 
-    @Override
+   /* @Override
     void Walk() {
         Log.d("Woman", "Walk: start");
     }
@@ -51,5 +52,31 @@ public class Woman extends AbstractHuman {
     void Run(){
         super.Run();
         Log.d("Woman", "Run: start ");
+    }
+*/
+    @Override
+    public void walk() {
+        Log.d("Woman","Walk: start ");
+    }
+
+    @Override
+    public void walk(Integer x) {
+        if (x==10){
+            Log.d("Woman", "X = 10");
+
+        } else{
+            Log.d("Walk","X != 10");
+        }
+
+    }
+
+    @Override
+    public void talk() {
+
+    }
+
+    @Override
+    public void run() {
+
     }
 }

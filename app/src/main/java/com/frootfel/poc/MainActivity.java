@@ -19,9 +19,11 @@ public class MainActivity extends AppCompatActivity {
         man = new Human();
         man.name = "Joe";
         female = new Woman();
-        female.name ="Harmony";
+        female.walk(10);
+      /*  female.name ="Harmony";
         female.Walk();
         female.Run();
+        */
     }
 
     @Override
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
 
         tv = (TextView)findViewById(R.id.textviewName);
-        tv.setText(man.name + "  " + female.name);
+        tv.setText(man.name + "  " + female.hairColor);
 
         femtext = (TextView)findViewById(R.id.textviewFName);
         femtext.setText(female.sayHello("How are you"));
