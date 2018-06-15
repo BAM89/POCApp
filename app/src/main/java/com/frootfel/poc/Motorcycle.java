@@ -4,26 +4,31 @@ public class Motorcycle implements Vehicle {
     public int speed;
     public int gear;
 
-    public String printStats(String Stats){
-        String printStats;
-        printStats = Stats;
+    public Motorcycle(){
+     this.speed =  0;
+     this.gear = 0;
+    }
 
+
+    public String printStats(){
         return (speed + " " + gear);
     }
 
-
     @Override
-    public void ChangeGear(Integer Gear) {
-
+    public void ChangeGear(Integer cgear) {
+        this.gear=cgear;
     }
 
     @Override
-    public void SpeedUp(Integer Increase) {
-
+    public void SpeedUp(Integer increase) {
+        this.speed=(speed+increase);
     }
 
     @Override
-    public void ApplyBrakes(Integer Decrease) {
+    public void ApplyBrakes(Integer decrease) {
+       if (speed > 0){
+           this.speed=(speed-decrease);
+       }
 
-    }
+       }
 }
