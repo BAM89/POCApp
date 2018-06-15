@@ -3,7 +3,7 @@ package com.frootfel.poc;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
-
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         femtext = (TextView)findViewById(R.id.textviewFName);
         femtext.setText(female.sayHello("How are you"));
+
+        Toast.makeText(getApplicationContext(),"Warning Message", Toast.LENGTH_LONG).show();
 
     }
 }
