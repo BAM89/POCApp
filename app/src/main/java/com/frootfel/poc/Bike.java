@@ -1,8 +1,6 @@
 package com.frootfel.poc;
 
-public class Bike implements Vehicle {
-    public int speed;
-    public int gear;
+public class Bike extends BaseVehicle{
 
     public Bike(){
         this.speed = 0;
@@ -15,7 +13,9 @@ public class Bike implements Vehicle {
 
     @Override
     public void ChangeGear(Integer cgear) {
+        super.ChangeGear(cgear);
         this.gear=cgear;
+
     }
 
     @Override

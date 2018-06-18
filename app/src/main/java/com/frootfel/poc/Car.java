@@ -1,6 +1,6 @@
 package com.frootfel.poc;
 
-public class Car implements Vehicle {
+public class Car extends BaseVehicle {
     public int speed;
     public int gear;
 
