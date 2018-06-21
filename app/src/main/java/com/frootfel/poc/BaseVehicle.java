@@ -32,4 +32,9 @@ public class BaseVehicle implements Vehicle {
         }
     }
 
+    @Override
+    public void FuelLevel(Fuel tank) {
+        this.FuelLevel(Fuel.Full);
+    }
+
 }

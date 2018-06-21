@@ -5,5 +5,6 @@ public interface Vehicle {
     void SpeedUp(Integer increase);
     void ApplyBrakes(Integer decrease);
     void TurnSignal(Direction dir);
+    void FuelLevel(Fuel tank);
 
 }
