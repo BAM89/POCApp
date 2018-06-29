@@ -1,7 +1,7 @@
 package com.frootfel.poc;
 
 public class Bike extends BaseVehicle{
-
+    //constructor
     public Bike(){
         this.speed = 0;
         this.gear = 0;
